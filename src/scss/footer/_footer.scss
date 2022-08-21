@@ -1,0 +1,132 @@
+.footer{
+    width: 80%;
+    margin: 10vw auto;
+    padding: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    // Logo-container
+    &__logos{
+        display: flex;
+        flex-direction: column;
+        border-bottom: solid 2px #707070;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    // Info-container
+    h4{
+        padding: 0 0 10px 0;
+    }
+    &__info{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15%;
+    }
+    &__info-item{
+        padding: 40px 0;
+        width: 100%;
+    }
+    &__about-subtitle{
+        color: #707070;
+        font-size: 1.2em;
+    }
+    &__about-text{
+        font-size: 1.1em;
+        line-height: 30px;
+    }
+}
+.instagram-gallery{
+    margin: 0 0 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.instagram-gallery img{
+    width: 33%;
+    padding: 5px;
+}
+.contact-subtitle{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+}
+.address-item{
+    color: #707070;
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: .3s;
+}
+.address-link{
+    display: inline-block;
+}
+.address-link:hover{
+    color: #707070;
+}
+.address-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #707070;
+    transition: width .15s;
+}
+.address-link:hover::after{
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+
+}
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .footer{
+        text-align: unset;
+        padding: 40px;
+        width: 85%;
+        margin: 5vw auto;
+        .footer-wrapper{
+            padding: 4%;
+        }    
+        // Logo-container
+        &__logos{
+            flex-direction: row;
+            padding-bottom: 80px;
+        }
+        &__socials{
+            justify-content: unset;
+            margin-left: auto;
+            padding-top: 0px;
+        }
+        // Info-container
+        &__info{
+            padding-top: 60px;
+            flex-direction: row;
+        }
+        &__info-item{
+            width: 33%;
+            padding: 0;
+        }
+    }
+    .instagram-gallery img{
+        width: 50%;
+        padding: 10px;
+    }    
+}
+/* Large devices */
+@media only screen and (min-width: 1200px) {
+    // Logo-container
+    .footer{
+        &__socials{
+            justify-content: unset;
+            margin-left: auto;
+            padding-top: 0px;
+        }
+    }
+    // Info-container
+    .instagram-gallery img{
+        padding: 10px;
+        width: 33%;
+    }
+}

@@ -1,0 +1,293 @@
+.header{
+    position: sticky;
+    width: 100%;
+    min-height: 8vh;
+    top: 0;
+    z-index: 1;
+    background-color: #000000;
+    color: #ffffff;  
+    a{
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.8em;
+        
+    } 
+    &__wrapper{
+        width: 100%;
+        margin: 0 auto;
+    }
+    // Logo
+    &__logo-container{
+        padding: 25px 20px;
+        max-width: 70vw;
+    }
+    &__logo{
+        width: 100%;
+    }
+    // Phone menu
+    &__small-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        img{
+            width: 100%; 
+        } 
+    }
+    // Universal nav
+    &__navigation{
+        position: relative;
+    }
+    // Socials and search
+    &__fancy-nav{
+        position: relative;
+        top: -10vh;
+        left: 0;
+    }
+            // Search
+    &__search-container{
+        position: absolute;
+        text-align: center;
+        height: 102vh;
+        width: 100%;
+        padding: 0 15%;
+        background-color: #000000;
+        padding-top: 10vh;
+        right: -100%;
+        transition: .2s;
+        z-index: 2;
+    }
+    &__searchbar-combine{
+        display: flex;
+        gap: 10px;
+        border-bottom: 1px solid #ffffff;
+    } 
+    &__search{
+        border: none;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #000000;
+        color: #ffffff;
+        &:focus{
+            outline: none;
+        }
+    }
+    &__search-result{
+        position: absolute;
+        margin: auto;
+        margin-top: 50px;
+        min-height: 300px;
+        width: 90%;
+        background-color: #000000;
+        color: #ffffff;
+        z-index: 2;
+        top: 10vh;
+        left: 0;
+        right: 0;
+    }
+    .search-result{
+        cursor: pointer;
+        padding: 15px 25px 0;
+        margin: 0 25px 25px;
+        border-bottom: solid 2px #707070;
+    }
+            // Socials
+    &__socials{
+        z-index: 1;
+        padding-top: 0px;
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+        top: 100vh;
+        opacity: 0;
+        transition: 0.2s;
+    }
+    // Nav
+    &__nav{
+        position: absolute;
+        transition: 0.2s;
+        width: 100%;
+        height: 92vh;
+        background-color: #000000;
+        right: -100%;
+    }
+    &__list-link{
+        display: inline-block;
+        padding: 15px 0;
+        &:hover{
+            color: #ffffff;
+            &::after{
+                width: 100%;
+            }
+        }
+        &::after{
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background: #ffffff;
+            transition: width .15s;
+        }
+    }
+}
+// Search
+.search-img{
+    img{
+        position: relative;
+        z-index: 3;
+        transition: .2s;
+    }
+}
+.search-checkbox:checked ~ .header__navigation > .header__fancy-nav > .header__search-container{
+    right: 0;
+}
+.search-checkbox:checked ~ .flex > .header__logo-container + .header__small-menu > .small__search-container > label > div > img{
+    transform: rotate(55deg);
+}
+// Burger menu
+.burgermenu-label{
+    display: block;
+}
+.small__burgermenu-container{
+    margin: auto 20px;
+    width: 28px;
+    // padding: 0 10px;
+}
+.burgermenu {
+    margin: 0 auto;
+    // margin-top: 30px;
+    width: 28x;
+    height: 14px;
+    position: relative;
+    transition: .4s;
+}
+.bar {
+    padding: 0;
+    width: 28px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    position: absolute; 
+}
+.bar1, .bar2 {
+    transform-origin: 5%;
+}
+.bar1 {
+    top: 0;
+}
+.bar2 {
+    bottom: 0;
+}
+.burgermenu-checkbox:checked ~ .header__navigation > div.header__fancy-nav > div.header__search-container ~ .header__socials{
+    top: 85vh;
+    opacity: 1;
+}
+.burgermenu-checkbox:checked ~ .header__navigation > .header__nav{
+    right: 0;
+}
+.burgermenu-checkbox:checked + .flex > .header__small-menu > .small__burgermenu-container > label > .burgermenu {
+    height: 21px;
+}
+.burgermenu-checkbox:checked + .flex > .header__small-menu > .small__burgermenu-container > label > .burgermenu > .bar1{
+    transform: rotate(45deg);
+    height: 2px;
+    width: 30px;
+}
+.burgermenu-checkbox:checked + .flex > .header__small-menu > .small__burgermenu-container > label > .burgermenu > .bar2{
+    transform: rotate(-45deg);
+    height: 2px;
+    width: 30px;
+}
+
+
+
+// Tablet
+@media only screen and (min-width: 768px) {
+    .header{
+        min-height: unset; 
+    }
+}
+// Laptop
+ @media only screen and (min-width: 992px) {
+    .header{
+        position: unset;
+        top: unset;
+        a{
+            font-size: 1.2em;
+        }  
+        &__wrapper{
+            width: 85%;
+            display: flex;
+        }
+        // Logo
+        &__logo-container{
+            margin: auto 0;
+            padding: 25px 20px 25px 0;
+            max-width: 60vw;
+        }
+        // Phone menu
+        &__small-menu{
+            display: none;
+        }
+        // Universal nav
+        &__navigation{ 
+            display: flex;
+            flex-direction: column;
+            padding: 40px 0 20px;
+            margin-left: auto;
+        }
+        // Socials and search
+        &__fancy-nav{
+            display: flex;
+            top: unset;
+            margin-left: auto;
+            gap: 20px;
+        }
+            // Search
+        &__search-container{
+            display: unset;
+            position: relative;
+            height: unset;
+            right: unset;
+            padding: unset;
+        }
+        &__search-result{
+            margin-top: 30px;
+            width: 100%;
+            top: unset;
+            border: solid #707070 2px;
+        }
+            // Socials
+        &__socials{
+            opacity: 1;
+            position: unset;
+            justify-content: unset;
+            margin-left: auto;
+            padding: 0 0 20px;
+            padding-top: 0px;
+        }
+        // Nav
+        &__nav{
+            position: unset;
+            display: flex;
+            height: unset;
+        } 
+        &__list{
+            display: flex;
+            gap: 40px;
+        }
+        &__list-link{
+            font-size: 20px;
+            padding: 0;
+        }
+    }
+}
+// Large devices
+@media only screen and (min-width: 1200px) {
+    .header{
+        &__list-link{
+        font-size: 25px;
+        }
+    }
+}

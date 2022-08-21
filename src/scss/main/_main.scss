@@ -1,0 +1,194 @@
+.main{
+    width: 80%;
+    margin: 0 auto;
+
+    // Article
+    &__article-container{
+        padding-left: 0;
+        .firstArticle{
+            padding: 0 0 30px;
+        }
+        .article{
+            position: relative;
+            text-align: left;
+            padding: 30px 0;    
+            &__wrapper{
+                cursor: pointer;
+            }
+            &__image-container{
+                img{
+                    width: 100%;
+                }
+            }
+            &__text-container{
+                padding: 20px 0;
+                font-size: 1.1em;
+                .article-title{
+                    font-weight: 600;
+                }
+                .article-meta{
+                    time{
+                        padding: 0 5px;
+                    }
+                    color: #707070;
+                }
+            }
+        }
+    }
+
+    &__pagination{
+        border-top: #DDDDDD solid 1px;
+        border-bottom: #DDDDDD solid 1px;
+        padding: 20px 0 40px;
+        display: flex;
+        align-items: center;
+        font-size: 1em;
+        .button{
+            width: 30%;
+        }
+        p{
+            margin: 0 auto;
+        }
+        button:first-child{
+            margin-right: auto;
+        }
+        button:last-child{
+            margin-left: auto;
+        }
+    }
+    // Sidebar
+    &__content-sidebar-item{
+        padding: 30px 0;
+        border-bottom: solid 1px #DDDDDD;
+        font-size: 1.2em;
+        line-height: 20px;
+        h3, h4{
+            padding-bottom: 10px;
+        }
+        ul{
+            line-height: 25px;
+            padding: 0;
+        }
+    }
+    &__content-sidebar-item:first-child {
+        padding: 40px 0 30px;
+    }
+    &__content-sidebar-item:last-child {
+        border-bottom: unset;
+    }
+    // Sponsors
+    &__sponsor-container{
+        padding: 40px 0 30px;
+        text-align: center;
+        border-top: solid 1px #DDDDDD;
+    }
+    &__sponsor-title{
+        padding-bottom: 50px;
+    }
+    &__sponsor-images{
+        display: flex;
+        flex-wrap: wrap;
+        img{
+            width: 33%;
+            padding: 5px;
+        }
+    }
+
+}
+// Tablet
+@media only screen and (min-width: 768px) {
+
+}
+/* Laptop */
+ @media only screen and (min-width: 992px) {
+     .main{
+        width: 70%;
+        &__content-container{
+            display: flex;
+        }
+        // Articles
+        &__content{
+            width: 60%;
+            margin-right: 40px;
+            font-size: 1.2em;
+        }
+            .article{
+            &__text-container{
+                padding: 30px 0 60px 30px;
+            }
+        }
+        &__pagination{
+            border-bottom: none;
+            padding: 30px 0 80px;
+            font-size: 1.2em;
+            .button{
+                width: unset;
+                min-width: 150px;
+            }
+        }
+        // Sidebar
+        &__content-sidebar{
+            width: 40%;
+            padding: 0 0 0 40px;
+        }
+        &__content-sidebar-item{
+            padding: 40px 0;
+        }
+        &__content-sidebar-item:first-child {
+            padding: 0 0 40px;
+        }
+
+        // Sponsors
+        &__sponsor-container{
+         padding: 80px 0;
+         text-align: center;
+         border-top: solid 1px #DDDDDD;
+        }
+        &__sponsor-title{
+            padding-bottom: 50px;
+        }
+        &__sponsor-images{
+            display: flex;
+            flex-wrap: wrap;
+            img{
+                width: 10%;
+                padding: 0 20px;
+            }
+        }
+    }
+
+}
+/* Large devices */
+@media only screen and (min-width: 1200px) {
+    .main{
+        &__content{
+            width: 60%;
+        }
+        .firstArticle{
+            padding: 0 0 30px;
+        }
+        .article__text-container{
+            padding: 0px 0 60px 30px;
+        }
+        .article__image-container{
+            img{
+                width: unset;
+            }
+        }
+        .activeArticles{
+            .article__wrapper{
+                display: flex;
+            }
+        }
+        &__article-container{
+            .button{
+                position: absolute;
+                bottom: 30px;
+            }
+        }
+        &__content-sidebar{
+            width: 40%;
+        }
+    }
+    
+}
