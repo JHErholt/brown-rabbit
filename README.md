@@ -1,5 +1,6 @@
 # brown-rabbit
 ** Danish **
+
 Jeg har lavet denne test side, som en del af en jobtest
 
 Kravene på siden, var at der skulle være et søgefelt, en liste med artikler (man kan søge på), som strækker sig ud over flere sidder, så man skal også kunne skifte mellem sider med artikler
@@ -9,6 +10,7 @@ Jeg skulle også lave en slider, som skiftede hero image samt hero tekst. Og så
 Jeg har lavet hele siden, uden brug af nogle libraries og gjorde det på 5 dage, ud fra en skabelon jeg fik
 
 ** English **
+
 I have made this test site, as a part of a jobtest
 
 The requirements was that there needed to be a search field, a list of articles (that you can search up), that stretch over many pages, so you can use pagination 
