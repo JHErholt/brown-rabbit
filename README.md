@@ -18,3 +18,5 @@ The requirements was that there needed to be a search field, a list of articles 
 I need a slider, with swapping hero image with hero text. And ofcourse does the site need to be responsive 
 
 I have made the whole site, without the use of libraries. The whole site is made in under 5 days, from a non working template i got.
+
+**Portfolio**
