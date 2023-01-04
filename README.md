@@ -1,4 +1,4 @@
-# brown-rabbit
+# Brown rabbit
 ## Danish
 
 Jeg har lavet denne test side, som en del af en jobtest
