@@ -1,5 +1,5 @@
 # brown-rabbit
-** Danish **
+## Danish
 
 Jeg har lavet denne test side, som en del af en jobtest
 
@@ -9,7 +9,7 @@ Jeg skulle også lave en slider, som skiftede hero image samt hero tekst. Og så
 
 Jeg har lavet hele siden, uden brug af nogle libraries og gjorde det på 5 dage, ud fra en skabelon jeg fik
 
-** English **
+## English
 
 I have made this test site, as a part of a jobtest
 
