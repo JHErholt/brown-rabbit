@@ -19,4 +19,4 @@ I need a slider, with swapping hero image with hero text. And ofcourse does the 
 
 I have made the whole site, without the use of libraries. The whole site is made in under 5 days, from a non working template i got.
 
-**Portfolio**
+_Portfolio_ _Featured_
