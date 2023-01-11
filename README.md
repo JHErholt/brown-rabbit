@@ -19,4 +19,4 @@ I need a slider, with swapping hero image with hero text. And ofcourse does the 
 
 I have made the whole site, without the use of libraries. The whole site is made in under 5 days, from a non working template i got.
 
-![Thumbnail for my project, Brown-rabbit, consisting of coffe beans](https://github.com/JHErholt/brown-rabbit/blob/main/brownrabbit_thumbnail.webp?raw=true)
+![Thumbnail for my project, Brown-rabbit, consisting of coffe beans](https://github.com/JHErholt/brown-rabbit/blob/main/brown-rabbit_thumbnail.webp?raw=true)
