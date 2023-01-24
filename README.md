@@ -10,7 +10,8 @@ Jeg skulle også lave en slider, som skiftede hero image samt hero tekst. Og så
 Jeg har lavet hele siden, uden brug af nogle libraries og gjorde det på 5 dage, ud fra en skabelon jeg fik
 
 __Bold__
-**Italic**
+
+*Italic*
 
 ## English
 
