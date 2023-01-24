@@ -7,11 +7,7 @@ Kravene på siden, var at der skulle være et søgefelt, en liste med artikler (
 
 Jeg skulle også lave en slider, som skiftede hero image samt hero tekst. Og så selvfølgelig skulle siden være responsiv
 
-Jeg har lavet hele siden, __uden__ brug af nogle libraries og gjorde det på 5 dage, ud fra en skabelon jeg fik
-
-
-
-*Italic*
+Jeg har lavet hele siden, uden brug af nogle libraries og gjorde det på 5 dage, ud fra en skabelon jeg fik
 
 ## English
 
